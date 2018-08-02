@@ -22,14 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '104eb0eb-170a-45e1-acd6-dd58b9757f2e'
+SECRET_KEY = os.environ.get('SECRET_KEY', '104eb0eb-170a-45e1-acd6-dd58b9757f2e')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ##ALLOWED_HOSTS = ['greatAmerican.herokuapp.com']
 ##ALLOWED_HOSTS = ['greatamericannaturalpetfood.us-west-2.elasticbeanstalk.com']
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['great-american.herokuapp.com', '.greatamericannaturalpetfood.com']
 
 # Application definition
 
@@ -82,12 +82,16 @@ WSGI_APPLICATION = 'greatAmerican.wsgi.application'
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    #'default': {
+    #    'ENGINE': 'django.db.backends.sqlite3',
+    #    'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    #}
 }
 
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASES['default'].update(db_from_env)
+#DATABASES['default']['CONN_MAX_AGE'] = 500
 
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
@@ -143,7 +147,7 @@ STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_FROM_EMAIL = 'info@greatamericannaturalpetfood.com'
-EMAIL_HOST_USER = ''
+EMAIL_HOST_USER = os.environ.get('EMAIL_PASSWORD')
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 EMAIL_PORT = 1025
