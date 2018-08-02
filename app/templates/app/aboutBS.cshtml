@@ -1,0 +1,70 @@
+﻿{% extends "app/layoutBS.cshtml" %}
+
+{% block nav_about %}
+    style="background-color: #e6e8ed;"
+{% endblock %}
+
+{% block content %}
+
+{% load staticfiles %}
+<div class="container">
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    About <strong>Great American Natural Pet Food LLC</strong>
+                </h2>
+                <hr>
+            </div>
+            <div class="col-md-6">
+                <img alt="" src="{% static 'app/img/about.jpg' %}" class="img-responsive img-border-left">
+            </div>
+            <div class="col-md-6">
+                <p>
+                    Great American Natural Pet Food LLC is an Indiana based limited liability company.
+                    The founders discovered the benefits of a raw diet through personal experience.
+                    After feeding their own pets a raw diet for over five years they knew that they had more energy, better digestion, shinier coats and softer skin.
+                    In short, their pets were healthier and much happier than when they were fed a diet of dry kibble.
+                    Now, the goal of Great American Natural Pet Food LLC is to provide a natural and convenient way for other pet owners to feed a raw diet to their four-footed family members at a reasonable price.
+                </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    Our <strong>Founders</strong>
+                </h2>
+                <hr>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img alt="" src="http://placehold.it/750x450" class="img-responsive">
+                <h3>
+                    James E. "Eddie" Pasteur
+                    <small>Founder and Managing Member</small>
+                </h3>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img alt="" src="http://placehold.it/750x450" class="img-responsive">
+                <h3>
+                    Jean Gartner
+                    <small>Founder and Managing Member</small>
+                </h3>
+            </div>
+            <div class="col-sm-4 text-center">
+                <img alt="" src="http://placehold.it/750x450" class="img-responsive">
+                <h3>
+                    Our Furry Family
+                    <small>The Reason We do What We do!</small>
+                </h3>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

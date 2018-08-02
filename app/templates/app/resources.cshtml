@@ -1,0 +1,185 @@
+﻿{% extends "app/layoutBS.cshtml" %}
+
+{% block nav_resources %}
+    style="background-color: #e6e8ed;"
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    {% load staticfiles %}
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    <strong>Resources</strong>
+                </h2>
+                <hr>
+                <img class="img-responsive img-border" src="{% static 'app/img/resources.jpg' %}" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    Transitioning Your Pet To A <strong>Raw Diet</strong>.
+                </h2>
+                <hr>
+                <h6>
+                    <strong>The Basics</strong>
+                </h6>
+                <p>
+                    Every pet is unique and there is no single “one size fits all” approach to transitioning your pet from kibble or canned food to a more natural, holistic, raw meat-based diet.
+                    There are, however, some basic principles and techniques that apply in most cases:
+                    <ul class="ul-index">
+                        <li>Be positive: dogs and cats are very sensitive to apprehensions or skepticism. Being confident will reassure your pet about your choice to change to a new diet.</li>
+                        <li>Go slow with older pets: the older the pet (or the longer it has been eating kibble), the longer you should take to transition to the new diet.</li>
+                        <li>Choose one meat to start: while variety is the key to good health when feeding a raw diet, it’s best to start with one type of meat during your transition (preferably the same meat type you are currently feeding). This will make it easier on your pet’s digestive system.</li>
+                        <li>Fast your pet the night before: your pet will have a greater interest in the new food the next morning and this also gives their digestive system a chance to rest.</li>
+                        <li>Limit treats during the transition: especially flour/grain based ones, in order to increase your pet’s appetite for its meals.</li>
+                        <li>Provide access to plenty of clean water.</li>
+                    </ul>
+                </p>
+                <hr id ="transition">
+                <h6>
+                    <strong>Puppies and Kittens</strong>
+                </h6>
+                <p>
+                    Puppies and kittens will generally have healthier digestive systems, and therefore will tolerate a more rapid switch (1 or 2 days) with no trouble.
+                    Start by substituting ¼ Great American Natural Pet Food for your puppy or kitten’s current food in each meal, gradually increasing the raw food while proportionately decreasing the kibble until the transition is complete.
+                </p>
+                <hr>
+                <h6>
+                    <strong>Healthy Pets</strong>
+                </h6>
+                <p>
+                    Younger and healthier pets can transition more quickly than older pets or pets with digestive issues.
+                    If your pet has no signs of illness or digestive difficulties such as loose stools, constipation or occasional vomiting, then you may be able to transition them in 5-7 days.
+                    This gradual transition aids in helping your pet’s gastrointestinal system adapt to the new meals.
+                </p>
+                <a href="{% static 'app/img/GANPFTransition.pdf' %}">
+                    <img class="img-responsive img-border" src="{% static 'app/img/GANPFTransition.jpg' %}" alt="" style="margin-bottom: 25px; margin-top: 25px;">
+                </a>
+                <ul class="ul-index">
+                    <li>Day 1 - Begin by substituting 1⁄8th Great American Natural Pet Food (GANPF) for your pet’s current food.</li>
+                    <li>Day 3 - After three more meals, double the GANPF portion (to ¼), while reducing the kibble by the same amount.</li>
+                    <li>Day 5 - After three more meals, double the GANPF portion again (to ½) and reduce the kibble again.</li>
+                    <li>Day 7 - After feeding ½ GANPF for 3 more meals, give a meal of all GANPF. If your pet tolerates this well with no digestive upset or other symptoms of discomfort, you have successfully switched your pet!</li>
+                </ul>
+                <hr>
+                <h6>
+                    <strong>Picky Eaters and Older Pets</strong>
+                </h6>
+                <p>
+                    Picky eaters or older pets may turn their noses up at the smell and texture of their new food.
+                    Don’t worry, as this is a common occurrence (particularly with smaller dogs) and is usually easy to address by following these steps:
+                </p>
+                <ul class="ul-index">
+                    <li>Eliminate treats during the transition.</li>
+                    <li>Fast your pet the night before starting the transition.</li>
+                    <li>Serve the meal in an appealing manner in a new place or “safe” area of your kitchen away from foot traffic.</li>
+                    <li>Add flavor “bribes” such as garlic powder, cheese or an egg yolk.</li>
+                    <li>Gently cook GANPF meals to release the flavors and aromas of the food by lightly baking the meal in a toaster oven or poaching it quickly on the stove.</li>
+                </ul>
+                <hr>
+                <h6>
+                    <strong>Pets with a Compromised Immune System</strong>
+                </h6>
+                <p>
+                    Many things can disrupt the healthy function of your dog’s or cat’s immune system, including disease, chronic stress, medications (such as antibiotics), and even vaccines.
+                    If your pet has a compromised immune system, we recommend lightly cooking GANPF meals by sautéing in a pan over medium to medium-high heat for 8-12 minutes to minimize any risks associated with feeding raw foods.
+                    Remember not overcook as the bones can become brittle.
+                    In addition, it is always a good idea to talk with your veterinarian before making the switch if you have concerns about their health, such as if your pet suffers from a disease that results in abnormal function of their immune system.
+                </p>
+                <hr>
+                <h6>
+                    <strong>Changes You May Notice in Your Pet While Transitioning to Raw</strong>
+                </h6>
+                <p>
+                    Stools from raw-fed pets tend to be smaller and firmer, as the pet is absorbing more nutrients from its food. Some pets will strain slightly at the hard stools.
+                    This is ok, and even beneficial, as the harder stools help the pet express its anal glands, reducing the likelihood of infection.
+                    There may be some variation in the consistency of your pet’s stool.
+                    This is also ok, although you should consult with your veterinarian if your pet experiences prolonged diarrhea (soft stool is not diarrhea).
+                    You may also occasionally see a film around your pet’s stool, especially during transition.
+                    This is ok as it is evidence of your pet’s body cleansing and detoxifying itself of harmful toxins.
+                </p>
+                <p>
+                    When switching your pet to a healthier, raw food diet, some pets – especially older ones who have been eating kibble for a long time – may experience a detoxification process.
+                    This condition may be a bit unnerving – you may see mucus coating your pet’s stool, excess shedding, dry skin, runny eyes, or other symptoms.
+                    Chronic or periodic skin conditions may briefly worsen. These symptoms do not mean that your pet is sick.
+                    In fact, they are signs that it is getting “unsick”, as the dog’s body purges itself of the various toxins that have built up over time.
+                    The situation will resolve itself, usually in a week or two, but it could take a couple of months in some cases, as new cells must replace old ones in order for the detox process to be completed.
+                    You may be able to speed up the process with increased exercise and by having plenty of fresh filtered water available.
+                    Pets may also occasionally choose to fast as their body completes this process.
+                </p>
+                <p>
+                    <strong>Note:</strong> Pets that have been on steroids, antibiotics, or other long-term drugs, may experience prolonged detoxification periods.
+                    You should always consult with your veterinarian if you believe your pet is manifesting severe problems connected to the diet change.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    <strong>How</strong> to feed your pet a <strong>Raw Diet</strong>.
+                </h2>
+                <hr>
+                <p>
+                    Feeding a GANPF raw diet is simple and convenient!
+                    Your food is vacuum-sealed in a convenient, resealable, deli-style tub and frozen fresh.
+                    It will be fine for four to six months when kept in your freezer.
+                    There are just a few simple steps from freezer to tummy:
+
+                    <ol class="ul-index">
+                        <li>Take what you need for the next day or two (see suggestions, below) from your freezer and place it in your refrigerator to thaw.</li>
+                        <li>Depending on the temp of your fridge, the food should thaw in 24 to 36 hours.</li>
+                        <li>Once thawed open the convenient, resealable, container and spoon the food into your pet's bowl.</li>
+                        <li>Once the food is gone (which it will be) pick up the bowl and wash it. Please remember the food is raw. All common sense rules about handling meat should apply. This means you must also clean the preparation surface, spoon, and your hands thoroughly after each meal just like if you were fixing a meal for your family that included raw meat preparation.</li>
+                        <li>Once defrosted, keep the unserved food refrigerated and use within 5-7 days. Do not refreeze after thaw.</li>
+                    </ol>
+                </p>
+                <p>
+                    <strong>Note:</strong> Improper handling or unsanitary conditions are a hazard for humans on a daily basis.
+                    Whether it's tainted spinach or a meat recall, we are regularly reminded to set and maintain high standards for cleanliness in and around our homes.
+                    Raw pet food is no different than the raw meat or fresh vegetables you buy at the grocery store.
+                </p>
+                <hr>
+                <h6>
+                    <strong>How Much</strong> Should I Feed my Dog?
+                </h6>
+                <p>
+                    As a general rule, a typical adult dog should consume about 2-4% of its ideal body weight per day split into two meals. 
+                    Typically, smaller dogs should eat a higher percentage of their body weight, while bigger dogs should eat a lower percentage. 
+                    In weekly and monthly terms:
+                </p>
+                <ul class="ul-index">
+                    <li>A 10 lb dog will eat about 2-2 1/2 lbs per week or about 10 lbs per month.</li>
+                    <li>A 25 lb dog will eat about 5 lbs per week or about 20 lbs per month.</li>
+                    <li>A 50 lb dog will eat about 8 lbs per week or about 32 lbs per month.</li>
+                    <li>A 75 lb dog will eat about 10- 10 1/2 lbs per week or about 42 lbs per month.</li>
+                    <li>A 100 lb dog will eat about 14 lbs per week or about 56 lbs per month.</li>
+                </ul>
+                <hr>
+                <h6>
+                    <strong>How Much</strong> Should I Feed my Cat?
+                </h6>
+                <p>
+                    When it comes to feeding your cat, the amount of food they need depends on their size, weight, and activity level. 
+                    Adult cats should typically eat 4-6 ounces per day, so one GANPF tub will feed your cat for approximately 5-7 days. Since the activity level of a cat can vary depending on their personality, we suggest that you monitor your cat’s weight and adjust the amount accordingly.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

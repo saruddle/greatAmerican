@@ -1,0 +1,105 @@
+﻿{% extends "app/layoutBS.cshtml" %}
+
+{% block nav_products %}
+    style="background-color: #e6e8ed;"
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    {% load staticfiles %}
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    <strong>About Our Products</strong>
+                </h2>
+                <hr>
+                <img class="img-responsive img-border img-left" src="{% static 'app/img/products.jpg' %}" alt="">
+                <hr class="visible-xs">
+                <p>
+                    Great American Natural Pet Food consists of organic, hormone free, antibiotic free, grass fed meat as well as bone matter, organs, fruits and vegetables.  We 
+                    do not use any additives or fillers. We have plain ground (all meat/bone) and mixed grind (inc. fruits & veggies).  Beef, Chicken, Pork, Turkey, Duck, Tripe and Rabbit. You'll find the same great ingredients in our treats as well.
+                </p>
+                <p>
+                    One of the drawbacks to a raw pet diet is handling the food.  In order to eliminate this headache we offer convenient, freezer safe, resealable 2-lb deli style tubs.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    <strong>What We Offer</strong>
+                </h2>
+                <hr>
+                <img class="img-responsive img-border img-left" src="{% static 'app/img/deli-tubs.jpg' %}" alt="">
+                <hr class="visible-xs">
+                <img class="img-responsive img-border img-right" src="{% static 'app/img/patty.jpg' %}" alt="">
+
+                <p>Our pet food is made with human grade quality food and inspected to human grade standards. 
+                The entire process takes place in a refrigerated environment so bacteria never have a chance to grow. 
+                Our pet food is "frozen fresh" - meaning it is frozen immediately after grinding and packaging. 
+                The freshness is locked in. We have a large variety to choose from including real bones and whole carcasses. 
+                Take a look at what we offer.  The following products come in convenient two pound deli tubs (see picture):</p>
+                <p>
+                    <strong>Plain Ground (85% Meat, 10% Bone, 5% Organs)</strong>
+                    <ul class="ul-index">
+                        <li>Chicken</li>
+                        <li>Beef</li>
+                        <li>Tripe (Intestines - No Bone Matter)</li>
+                        <li>Turkey</li>
+                        <li>Duck</li>
+                        <li>Rabbit</li>
+                        <li>Lamb</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Mixed Ground (85% Plain Ground + 15% Fruit/Veggies)</strong>
+                    <ul class="ul-index">
+                        <li>Chicken</li>
+                        <li>Beef</li>
+                        <li>Tripe (Intestines - No Bone Matter)</li>
+                        <li>Turkey</li>
+                        <li>Duck</li>
+                        <li>Rabbit</li>
+                        <li>Lamb</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Plain Organs (100% Organs)</strong>
+                    <ul class="ul-index">
+                        <li>Beef Heart</li>
+                        <li>Beef Liver</li>
+                        <li>Chicken Heart</li>
+                        <li>Chicken Liver</li>
+                    </ul>
+                </p>
+
+                <p>
+                    <strong>Whole Carcasses and Bones</strong>
+                    <ul class="ul-index">
+                        <li>Whole Duck</li>
+                        <li>Whole Rabbit</li>
+                        <li>Huge Knuckle Bones</li>
+                        <li>Medium Size (Cut up) Bones</li>
+                    </ul>
+                </p>
+                <hr>
+                <p style="text-align: center">We also offer any of our ground and mixed ground products in convenient 8oz patties.</p>
+                <hr>
+                <h6 style="text-align: center">All of our sales are wholesale. We are actively recruiting distributors. For more information, pricing, etc. please call us or use our <a href="{% url 'contact' %}#contact-form">Contact Form</a>.</h6>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    {% endblock %}
+

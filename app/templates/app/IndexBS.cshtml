@@ -1,0 +1,184 @@
+﻿{% extends "app/layoutBS.cshtml" %}
+
+{% block nav_home %}
+    background-color: #e6e8ed;
+{% endblock %}
+
+
+{% block content %}
+
+<div class="container">
+    {% load staticfiles %}
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12 text-center">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators hidden-xs">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive img-full" src="{% static 'app/img/slide-1.jpg' %}" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive img-full" src="{% static 'app/img/slide-2.jpg' %}" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive img-full" src="{% static 'app/img/slide-3.jpg' %}" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="icon-prev"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="icon-next"></span>
+                    </a>
+                </div>
+                <h2>
+                    <small>Welcome to the home of</small>
+                </h2>
+                <h1>
+                    <span class="brand-name">Great American Natural Pet Food</span>
+                </h1>
+                <hr class="tagline-divider">
+                <h2>
+                    <small>Nature's Way of Making Your Pets <strong>Healthy and Happy!</strong></small>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    Do you <strong>really know</strong> what's in <strong>your</strong> pet's food bowl?
+                </h2>
+                <hr>
+                <img class="img-responsive img-border img-left" src="{% static 'app/img/intro-pic.jpg' %}" alt="">
+                <hr>
+                <!--<hr class="visible-xs">-->
+
+                <p>
+                    Pet food is a multi-billion dollar per year industry.  Many millions of dollars are spent each year to convince pet owners that each product is the "right" stuff.  But what is in traditional dry (kibble) dog food?  Do you know?  Nobody (but the manufacturer) really knows.  That is the point.  Ultimately, the large pet food producers are concerned with one thing - profit.
+                    There are only two ways to increase profit: raise prices or cut expenses.  Raising prices is unpopular with the consumers.  Cost (expense) cutting is a hidden measure and, thus, much more attractive to the large pet food producers.
+                    How are costs cut, you ask?  By putting cheaper ingredients into their products.  These would be called fillers.  If you start thinking of large pet food suppliers as "filler suppliers" you will be much closer to the mark.
+                    Don't fool yourself into believing that the big companies are doing the right thing and looking out for you and your furry friends.
+                </p>
+                <p>
+                    Whether you feed your pet from a bag or can, these heavily-processed foods share similar shortcomings:
+
+                    <ul class="ul-index">
+                        <li>Cooking and high pressure processing destroys most of the vital enzymes and vitamins in the ingredients.</li>
+                        <li>Only a small percentage of the lost nutrients are replaced by synthetic additives but even these are not easily absorbed by your pet.</li>
+                        <li>Cheap ingredients including grains and fillers add calories but are actually difficult for pets to digest.</li>
+                        <li>Protein levels can look good on the label but can also come from difficult to digest sources.</li>
+                        <li>Heavily-processed pet foods contain preservatives for long-term storage in warehouses and retail stores. Preservatives not only depletes micronutrients but have been connected with many common allergies – such as yeast on the skin, paws and in the ears.</li>
+                    </ul>
+                </p>
+                <p>
+                    Pet food has transformed over the last century into a massive profit machine.  Now, animals that once ate carcasses or even human grade
+                    food (leftovers) are being fed fillers - a synonym for "who knows what?...".  We have discovered a better way to take care of our pets and would like to share it with you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">
+                    Why choose a <strong>Raw Diet</strong> for your pet?
+                </h2>
+                <hr>
+                <p>
+                    A diet made up primarily of raw meat, organs and bone is the healthiest way to feed your pet.  Eliminate the waste products of dry kibble food and step your pet up to the diet that nature intended.
+                    Here are just a few of the benefits of a raw diet for your pet:
+                </p>
+
+                <ul class="ul-index">
+                    <li>Increased Muscle Mass</li>
+                    <li>Better Agility (Less Arthritis)</li>
+                    <li>Healthier Coat</li>
+                    <li>Superior Nutrition</li>
+                    <li>More Energy</li>
+                    <li>Stronger Teeth</li>
+                    <li>Stronger Bones</li>
+                    <li>Better Immune System</li>
+                    <li>Reduced Allergies</li>
+                    <li>Healthier Digestive System</li>
+                    <li>Smaller, Less Odorous, Stool</li>
+                </ul>
+
+                <p>
+                    Our raw pet food consists of organic, hormone free, antibiotic free, grass fed meat as well as bone matter, organs, fruits and vegetables.  We have plain ground (all meat/bone) and mixed grind (inc. fruits & veggies).
+                    When you bring home Great American Natural Pet Food, you are serving your pet <strong>human grade</strong> food with absolutely no fillers.
+                </p>
+                <p>
+                    You might be thinking..."if this is so great, why isn't everyone doing it?"  Good question.  First, nearly all owners with a vested interest in their pet’s health (show pets, racing dogs and breeders) choose a raw diet.
+                    Others are held back by a combination of fear, imagined inconvenience and clever marketing from the big dry pet food suppliers.
+                    Please visit our <a href="{% url 'resources' %}">resources</a> page for information on how to clear up these misconceptions.
+                </p>
+                <hr>
+                <h4 class="intro-text text-center">
+                    See the difference a <strong>Raw Diet</strong> can make.
+                </h4>
+                <hr>
+                <p>
+                    Within a few days after switching your pet to a raw food diet, you’ll notice how much more energy your pet has and how much less waste you’ll have to scoop up since they’re consuming food that is more digestible.
+                    After about a month, you will see improvements in your pet’s overall health, as their immune system becomes stronger and better able to fight off disease.
+                    Finally, after a few months, you will notice how much you are saving in veterinary bills and medications for your pet. When they can fight back naturally against disease, they become sick less often. If your pet has a chronic illness like diabetes, skin allergies, or arthritis, you may notice some symptoms start to disappear without medications. Overall, you will have a much happier and healthier pet so you can enjoy the time you have with them!
+                </p>
+                <hr>
+                <h4 class="intro-text text-center">
+                    How about a <strong>Raw Diet</strong> for older pets?
+                </h4>
+                <hr>
+                <p>
+                    Proper nutrition is important in every stage of life. Great American Natural Pet Food is completely balanced and formulated to meet the nutritional standards outlined by the AAFCO Dog and Cat Food Nutrient Profiles for All Life Stages.
+                    Many pet owners think they can’t do anything to help an older dog or cat with increasing physical ailments. Luckily, in most cases, changing their diet to Great American Natural Pet Food’s high quality raw food can yield big improvements in their energy level and overall health.
+                    Studies indicate that dogs and cats need more protein as they age, not less, in order to maintain healthy lean muscle mass and good organ and immune function.
+                    The type of protein most dogs and cats thrive on is from high quality meat, minimally processed to keep nutrients intact. However, the rendered protein sources used in most commercial pet foods put chronic strain on the kidneys and liver, so by the time your pet is into the senior years, its organs can no longer do their job efficiently.
+                    This is why commercial diets for senior pets with reduced protein were created.
+                    The poor-quality protein used in most kibble and canned foods is difficult to digest, especially for older pets who’ve been fed the stuff all their lives.
+                    The sooner you transition your dog or cat to the kind of diet they were designed to eat, the sooner they will be on their way to vibrant good health.
+                    A raw diet will help keep your pet at a healthy weight and give them the energy to be physically active as they age.
+                    This helps control and minimize the effects of arthritis and degenerative joint disease.
+                    The ingredients are easier for pets to digest, minimizing stress on their organs, and keeping your pet’s digestive system strong and resilient so they may be able to fight off disease on their own, without medication.
+                </p>
+                <hr>
+                <h4 class="intro-text text-center">
+                    A <strong>Raw Diet</strong> for puppies and kittens.
+                </h4>
+                <hr>
+                <p>
+                    By far, the very best time to start feeding pets high-quality raw foods is before they are born. Some studies suggest that conditions in the womb, including the mom’s diet, are just as important as genetic factors for your dog or cat’s long-term health and temperament.
+                    People who want healthy pets that live a long and happy life should look for breeders who feed high-quality (not high-fat) raw diets to their own pets during pregnancy and beyond.
+                    These breeders will most likely wean their pups or kittens onto high-quality raw diets.
+                    If you bring home a kibble-fed puppy or kitten, it is best to introduce raw food within a few days, as soon as they settle down, but slowly.
+                    Just like human babies, the most important time for good nutrition is when their body and brain are developing, which continues until adulthood.
+                    For tips on transitioning your puppy or kitten to a raw diet please see our <a href="{% url 'resources' %}#transition">resources</a> page.
+                    Some people may be concerned that a young puppy or kitten cannot handle the microbes in a raw diet, but our pets live in a world full of microbes. Keep in mind that dirt contains billions of microbes, and any animal that has ever gone outside has eaten so much dirt that its immune system can most likely readily handle raw.
+                    In several recently published studies, researchers concluded that organisms like the billions of bacteria, viruses and worms that enter the body along with dirt spur the development of a healthy immune system.
+                    So start your puppies and kittens on quality raw diets as soon as you bring them home.
+                    It’s the most important time to feed the best foods you possibly can: high-protein, balanced fats, including DHA, complete mineral and antioxidant foods.
+                    Remember, Great American Natural Pet Food is completely balanced and formulated to meet the nutritional levels established by the AAFCO Dog and Cat Food Nutrient Profiles for All Life Stages.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
+<!--<script src="{% static 'app/scripts/bootstrap.js' %}"></script>-->

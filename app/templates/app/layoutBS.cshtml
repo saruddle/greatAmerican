@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{{ title }}</title>
+    <!-- Bootstrap core CSS -->
+    {% load staticfiles %}
+    <link href= "{% static 'app/content/bootstrap.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'app/content/business-casual.css' %}" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="brand">Great American Natural Pet Food</div>
+    <div class="address-bar">The Healthy, All-Natural, Solution for Your Pet</div>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">GANPF</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li style="{% block nav_home%}{% endblock %}">
+                        <a href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li  {% block nav_products%}{% endblock %}>
+                        <a href="{% url 'products' %}">Products</a>
+                    </li>
+                    <li {% block nav_resources%}{% endblock %}>
+                        <a href="{% url 'resources' %}">Resources</a>
+                    </li>
+                    <!--<li>
+                        <a href="{% url 'blog' %}">Blog</a>
+                    </li>-->
+                    <li {% block nav_about%}{% endblock %}>
+                        <a href="{% url 'about' %}">About</a>
+                    </li>
+                    <li {% block nav_contact%}{% endblock %}>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p class="foot">Copyright &copy; Great American Natural Pet Food LLC {{ year }}<br>16 Maxwell Drive | Indianapolis, Indiana 46217 | (317)800-2881</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    {% block scripts %}
+    <script src="{% static 'app/scripts/jquery-1.10.2.js' %}"></script>
+    <script src="{% static 'app/scripts/bootstrap.js' %}"></script>
+    <script src="{% static 'app/scripts/respond.js' %}"></script>
+    {% endblock %}
+</body>
+</html>
