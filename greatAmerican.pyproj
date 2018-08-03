@@ -37,6 +37,9 @@
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="greatAmerican\aws\conf.py" />
+    <Compile Include="greatAmerican\aws\utils.py" />
+    <Compile Include="greatAmerican\aws\__init__.py" />
     <Compile Include="greatAmerican\settings\base.py" />
     <Compile Include="greatAmerican\settings\local.py" />
     <Compile Include="greatAmerican\settings\production.py" />
@@ -59,6 +62,7 @@
     <Folder Include="app\templates\" />
     <Folder Include="app\templates\app\" />
     <Folder Include="greatAmerican\" />
+    <Folder Include="greatAmerican\aws\" />
     <Folder Include="greatAmerican\settings\" />
     <Folder Include="greatAmerican\__pycache__\" />
   </ItemGroup>
