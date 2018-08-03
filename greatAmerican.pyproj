@@ -97,6 +97,7 @@
     <Content Include="app\templates\app\products.cshtml" />
     <Content Include="app\templates\app\resources.cshtml" />
     <Content Include="app\templates\app\_ViewStart.cshtml" />
+    <Content Include="greatAmerican\Procfile" />
     <Content Include="greatAmerican\runtime.txt" />
     <Content Include="greatAmerican\__pycache__\settings.cpython-36.pyc" />
     <Content Include="greatAmerican\__pycache__\urls.cpython-36.pyc" />
