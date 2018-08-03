@@ -102,6 +102,7 @@
     <Content Include="greatAmerican\__pycache__\urls.cpython-36.pyc" />
     <Content Include="greatAmerican\__pycache__\wsgi.cpython-36.pyc" />
     <Content Include="greatAmerican\__pycache__\__init__.cpython-36.pyc" />
+    <Content Include="Procfile" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
