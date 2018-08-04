@@ -30,7 +30,7 @@ DEBUG = True
 
 ##ALLOWED_HOSTS = ['greatAmerican.herokuapp.com']
 ##ALLOWED_HOSTS = ['greatamericannaturalpetfood.us-west-2.elasticbeanstalk.com']
-ALLOWED_HOSTS = ['great-american.herokuapp.com', 'local']
+ALLOWED_HOSTS = ['great-american.herokuapp.com']
 
 # Application definition
 
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'greatAmerican.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'app/templates/app/templates')],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
