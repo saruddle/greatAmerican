@@ -30,7 +30,7 @@ DEBUG = False
 
 ##ALLOWED_HOSTS = ['greatAmerican.herokuapp.com']
 ##ALLOWED_HOSTS = ['greatamericannaturalpetfood.us-west-2.elasticbeanstalk.com']
-ALLOWED_HOSTS = ['.great-american.herokuapp.com', '.greatamericannaturalpetfood.com']
+ALLOWED_HOSTS = ['great-american.herokuapp.com']
 
 # Application definition
 
