@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = os.environ.get('SECRET_KEY', '104eb0eb-170a-45e1-acd6-dd58b9757f2e')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ##ALLOWED_HOSTS = ['greatAmerican.herokuapp.com']
 ##ALLOWED_HOSTS = ['greatamericannaturalpetfood.us-west-2.elasticbeanstalk.com']
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'greatAmerican.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'app/templates/app/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
