@@ -17,6 +17,7 @@ from greatAmerican.aws import conf
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+TEMPLATES_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -64,7 +65,8 @@ ROOT_URLCONF = 'greatAmerican.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(TEMPLATES_BASE_DIR, 'app/templates/app')],
+        #'DIRS': [os.path.join(BASE_DIR,'app/templates/app/')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
