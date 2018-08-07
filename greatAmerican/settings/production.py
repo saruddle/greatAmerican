@@ -17,7 +17,7 @@ from greatAmerican.aws import conf
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-TEMPLATES_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))
+#templates_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -29,8 +29,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '104eb0eb-170a-45e1-acd6-dd58b9757f2e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-##ALLOWED_HOSTS = ['greatAmerican.herokuapp.com']
-##ALLOWED_HOSTS = ['greatamericannaturalpetfood.us-west-2.elasticbeanstalk.com']
 ALLOWED_HOSTS = ['great-american.herokuapp.com']
 
 # Application definition
@@ -65,7 +63,7 @@ ROOT_URLCONF = 'greatAmerican.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['TEMPLATES_BASE_DIR'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
