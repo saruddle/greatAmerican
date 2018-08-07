@@ -65,7 +65,7 @@ ROOT_URLCONF = 'greatAmerican.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [TEMPLATES_BASE_DIR],
+        'DIRS': ['TEMPLATES_BASE_DIR'],
         # C:\Users\Owner\source\repos\greatAmerican\app\templates\app\IndexBS.cshtml
         'APP_DIRS': True,
         'OPTIONS': {
