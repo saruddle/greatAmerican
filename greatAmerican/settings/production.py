@@ -63,7 +63,7 @@ ROOT_URLCONF = 'greatAmerican.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(templates_path, 'templates/app')],
+        'DIRS': [os.path.join(templates_path)],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
