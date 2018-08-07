@@ -17,7 +17,7 @@ from greatAmerican.aws import conf
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-TEMPLATES_BASE_DIR = os.path.realpath(os.path.dirname(__file__)) + '/templates/app/'
+TEMPLATES_BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -135,7 +135,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
+STATIC_ROOT = posixpath.join(*(TEMPLATES_BASE_DIR.split(os.path.sep) + ['static']))
 
 #PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
 #STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
