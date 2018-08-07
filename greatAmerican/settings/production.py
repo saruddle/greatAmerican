@@ -66,7 +66,6 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['TEMPLATES_BASE_DIR'],
-        # C:\Users\Owner\source\repos\greatAmerican\app\templates\app\IndexBS.cshtml
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -135,7 +134,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = posixpath.join(*(TEMPLATES_BASE_DIR.split(os.path.sep) + ['static']))
+STATIC_ROOT = posixpath.join(*(BASE_DIR.split(os.path.sep) + ['static']))
 
 #PROJECT_ROOT   =   os.path.join(os.path.abspath(__file__))
 #STATIC_ROOT  =   os.path.join(PROJECT_ROOT, 'staticfiles')
