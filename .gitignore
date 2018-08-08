@@ -1,5 +1,5 @@
 env/
-greatAmerican\settings\local.py
+greatAmerican/settings/local.py
 db.sqlite3
 
 ## Ignore Visual Studio temporary files, build results, and
